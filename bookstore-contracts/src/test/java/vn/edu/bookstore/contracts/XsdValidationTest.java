@@ -44,9 +44,8 @@ class XsdValidationTest {
             "book-invalid-money-scale.xml",
             "book-invalid-currency.xml",
             "book-wrong-namespace.xml",
-            "order-invalid-number.xml"
-            "order-invalid-status.xml"
-            })
+            "order-invalid-number.xml",
+            "order-invalid-status.xml"})
     void tepViPhamLuocDoBiTuChoi(String file) {
         List<String> errors = XmlContracts.validate(sample(file));
         assertThat(errors).as("lỗi kiểm chứng của " + file).isNotEmpty();

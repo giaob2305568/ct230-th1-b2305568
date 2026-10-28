@@ -5,6 +5,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import vn.edu.bookstore.legacy.adapter.soap.generated.BookCatalogPortType;
 import vn.edu.bookstore.legacy.adapter.soap.generated.BookCatalogService;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import jakarta.xml.ws.BindingProvider;
+import jakarta.xml.ws.handler.Handler;
+import vn.edu.bookstore.legacy.adapter.soap.SoapLoggingHandler;
 
 @Configuration
 public class LegacySoapClientConfig {
