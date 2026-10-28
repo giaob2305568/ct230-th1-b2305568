@@ -87,7 +87,6 @@ class XsdValidationTest {
                 .contains("http://bookstore.edu.vn/catalog/v1");
     }
 
-    @org.junit.jupiter.api.Disabled("TODO(TH1-3)")
     @Test
     void ghiDoiTuongViPhamLuocDoBiChan() {
         Book book = new Book();
